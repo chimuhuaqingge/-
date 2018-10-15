@@ -344,6 +344,7 @@ header{
     width: 190px;
     height: 467px;
     background: #4e494a;
+<<<<<<< HEAD
     z-index: 100;
 }
 .shop-type li{
@@ -417,6 +418,82 @@ header{
     height:23px;
     border-bottom: 1px dashed #f3f3f3
 }
+=======
+    z-index: 1;
+}
+.shop-type li{
+    padding-left: 42px;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+}
+.shop-type li a{
+    font-size: 12px;
+    color: #fff
+}
+.shop-type .type-li1{
+    padding-left: 13px;
+    background:#151515;
+}
+.type-li1 img{
+    width: 14px;
+    height: 12px;
+    margin-top: 0;
+    margin-right: 20px;
+    /* vertical-align: middle */
+}
+.shop-aside{
+    /* width: 710px; */
+    width: 692px;
+    /* height: 432px; */
+    height: 412px;
+    background:#fff;
+    position: absolute;
+    left: 190px;
+    top: 0;
+    padding: 20px 0 0 25px;
+    display: none;
+}
+.shop-aside ul{
+    margin-bottom: 20px;
+}
+.shop-aside ul:nth-child(1){
+    width: 685px;
+    height:40px;
+}
+.shop-aside ul:nth-child(2){
+    width: 685px;
+    height:23px;
+}
+.shop-aside ul:nth-child(3){
+    width: 685px;
+    height:23px;
+}
+.shop-aside ul:nth-child(4){
+    width: 685px;
+    height:23px;
+}
+.shop-aside ul:nth-child(5){
+    width: 685px;
+    height:23px;
+}
+.shop-aside ul:nth-child(6){
+    width: 685px;
+    height:40px;
+}
+.shop-aside ul:nth-child(7){
+    width: 685px;
+    height:23px;
+}
+.shop-aside ul:nth-child(8){
+    width: 685px;
+    height:23px;
+}
+.shop-aside ul:nth-child(9){
+    width: 685px;
+    height:23px;
+}
+>>>>>>> be680f0d96c08310a9078a2b0a6d894c0faeb549
 .shop-aside ul li{
     float: left;
     height: 23px;
