@@ -1,7 +1,8 @@
 header{
     width: 1550px;
     height: 160px;
-    margin: auto
+    margin: auto;
+    border-bottom: 2px solid #121212
 }
 .header-top{
     height: 30px;
@@ -25,10 +26,6 @@ header{
      border-left: 1px solid #e5e5e5
 }
 .Hovering:hover .first{
-    display: block;
-    height: 30px;
-    border: 0;
-    color: #ff6f6f;
     background:url(../images/jiantou2.gif) no-repeat 65px;
     box-shadow: 1px 0 0 #e5e5e5
 }
@@ -79,12 +76,7 @@ header{
 .left-li2 .li2-aside li:nth-child(4){
     margin-left: 23px
 }
-.left-li2:hover .li2-aside{
-    display: block
-}
-.left-li2 .li2-aside li a:hover{
-    color: #ff3d3d
-}
+
 /* top-右 */
 .top-right{
     width: 570px;
@@ -120,13 +112,11 @@ header{
 .right-li3:hover{
     border-left: 1px solid #e5e5e5
 }
-.right-li3:hover a{
-    display: block;
+.right-li3:hover a{   
     border: 0;   
     width: 48px;
     height: 30px;
     padding: 0 10px;
-    color: #ff6f6f;
     box-shadow: 1px 0 0 #e5e5e5
 }
 .right-li4 .li4-aside{
@@ -140,15 +130,9 @@ header{
     border-top: 0;
     display: none
 }
-.right-li4:hover .li4-aside{
-    display: block
-}
 .right-li4 .li4-aside li{
     height: 13px;
     margin-bottom: 13px
-}
-.li4-aside li a:hover{
-    color: #ff3d3d
 }
 .right-last{
     width: 60px;
@@ -161,9 +145,6 @@ header{
     border-top: 0;
     border-bottom: 0;
     padding: 0 10px;    
-}
-.right-li5:hover .li5-aside{
-    display: block
 }
 .li5-aside{
     width: 480px;
@@ -193,9 +174,6 @@ header{
 }
 .li5-aside .last{
     border-right: 0
-}
-.li5-aside li p:hover a{
-    color: #ff3d3d
 }
 .li6-aside{
     width: 72px;
@@ -319,22 +297,22 @@ header{
     font-size: 15px;
     color: #fff;
 }
-.nav-list{
+.nav-s{
     margin-top: 4px
 }
-.nav-list li{
+.nav-s li{
     float: left;
     border-right: 1px solid #e9e5e9;
     padding: 0 12px 0 6px;
     color: #999999
 }
-.nav-list li:nth-child(1){
+.nav-s li:nth-child(1){
     padding-left: 0
 }
-.nav-list li:last-child{
+.nav-s li:last-child{
     border-right: 0
 }
-.nav-list li:hover a{
+.nav-s li:hover a{
     color: #ff3d3d;
     border-bottom: 1px solid #ff3d3d
 
@@ -354,7 +332,7 @@ header{
     color: #ff3d3d;
     border-color: #ff3d3d;
 }
-/* 所有商品分类---横排 */
+/* 所有商品分类 */
 .shop-list{
     height: 35px;
     margin-top: 16px;
@@ -364,10 +342,104 @@ header{
     position: absolute;
     left: 0;
     width: 190px;
-    height: 465px;
-    background: #151515;
-    z-index: 1;
+    height: 467px;
+    background: #4e494a;
+    z-index: 100;
 }
+.shop-type li{
+    padding-left: 42px;
+    height: 30px;
+    line-height: 30px;
+    
+}
+.shop-type a{
+    font-size: 12px;
+    color: #fff
+}
+.shop-type .type-li1{
+    height: 35px;
+    padding-left: 13px;
+    background:#151515;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.type-li1 img{
+    width: 14px;
+    height: 12px;
+    margin-top: 0;
+    margin-right: 20px;
+    /* vertical-align: middle */
+}
+.shop-type li a:hover{
+    text-decoration: underline    
+}
+.shop-aside{
+    /* width: 710px; */
+    width: 1000px;
+    /* height: 432px; */
+    height: 412px;
+    background:#fff;
+    position: absolute;
+    left: 190px;
+    top: 37px;
+    padding: 20px 0 0 25px;
+    display: none;
+    z-index: 100;   
+}
+.shop-aside .tu{
+    width: 240px;
+    height: 410px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.shop-aside .tu img{
+    width: 240px;
+    height: 200px;
+}
+.shop-aside ul{
+    width: 752px;
+    margin-bottom: 20px;
+}
+.shop-aside ul li a:hover{
+    text-decoration: underline
+}
+.shop-aside ul .aside-li1 a:hover{
+    text-decoration: none
+}
+.shop-aside .even{
+    width: 685px;
+    height:40px;
+    border-bottom: 1px dashed #f3f3f3
+}
+.shop-aside .odd{
+    width: 685px;
+    height:23px;
+    border-bottom: 1px dashed #f3f3f3
+}
+.shop-aside ul li{
+    float: left;
+    height: 23px;
+    line-height: 13px;
+    margin: 0;
+    padding: 0;
+    margin-right: 18px;
+    
+    
+}
+.shop-aside ul li a{
+    color: #666666;
+    height: 13px;
+}
+.shop-aside .aside-li1{
+    margin-right: 25px;
+}
+.shop-aside .aside-li1 a{
+    color: #000000;
+    font-weight: bold
+
+}
+/* 所有商品分类---横排 */
 .goods-list{
     margin-left: 190px;
 }
@@ -391,37 +463,21 @@ header{
     top: -12px;
     display: none    
 }
+.goods-list li:hover a{
+    color: #ff3d3d
+}
 .goods-list li:hover img{
     display: block  
 }
+
+
 /* 轮播图区域 */
 .banner-list{
     width: 1550px;
     height: 430px;
     background: #22ffee;
     margin: auto;
-    overflow: hidden;
-    position: relative;    
-}
-.banner{
-    width: 7550px;
-    height: 430px;
-    display: flex;
-    
-    position: absolute;    
-}
-.banner li{    
-    width: 785px;
-    height: 430px;
-    padding:0 390px 0  375px;
-    background: gray;
-    position: relative;
-}
-.banner li a{
-    display: block;
-    width: 785px;
-    height: 430px;
-   
+    position: relative; 
 }
 #left{
     display: block;
@@ -435,7 +491,8 @@ header{
     opacity: 0.5;
     text-align: center;
     font-size: 22px;
-    color: #938c8c
+    color: #938c8c;
+    z-index: 1;
 }
 #right{
     display: block;
@@ -450,10 +507,10 @@ header{
     text-align: center;
     font-size: 22px;
     color: #938c8c;
-
+    z-index: 1;
 }
 
-#btnlist{
+#list{
     width: 1550px;
     height:16px;
     position: absolute;
@@ -464,7 +521,7 @@ header{
     text-align: center;
 }
 
-#btnlist span{
+#list span{
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -474,9 +531,483 @@ header{
     visibility: visible;
     margin-right: 10px 
 }
-span.active{
+#list span.active{
     width: 13px;
     height: 13px;
     border: 0;
     background: #333;
+}
+#show{
+    width: 785px;
+    height: 430px;
+    margin-left: 375px;
+    position: relative;
+    overflow: hidden;
+}
+#show .banner-list{
+    width: 4710px;
+    height: 430px;
+    position: absolute;
+    
+}
+#show .banner-list li{
+    float: left;
+    width: 785px;
+    height: 430px;
+}
+#show .banner-list li img{
+    width: 785px;
+    height: 430px;
+}
+
+/* 超值团 */
+.Activity{
+    width: 1301px;
+    height: 245px;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 189px;
+    padding-right: 50px;
+}
+.Act-left{
+    width: 220px;
+    height: 245px;
+    float: left;
+}
+.Act-left img{
+    width: 220px;
+    height: 245px;
+}
+.Act-right{
+    float: left;
+    width: 965px;
+    height: 243px;
+    border: 1px solid #e4e4e4;
+    position: relative;
+    overflow: hidden;
+    
+}
+.Act-right .left{
+    display: block;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    background: #d6d1d1;
+    position: absolute;
+    left: 5px;
+    top: 100px;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 22px;
+    color: #938c8c;
+    z-index: 1;
+}
+.Act-right .right{
+    display: block;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    background: #d6d1d1;
+    position: absolute;
+    right: 5px;
+    top: 100px;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 22px;
+    color: #938c8c;
+    z-index: 1;
+}
+.Act-shop {
+    width: 1930px;   
+}
+.Act-shop li{
+    float: left;
+}
+.Act-list a{
+    display:block;
+    float: left;
+    width: 160px;
+    height: 233px;
+    background: #fff;
+    border-right: 1px dashed #e4e4e4;
+    padding-bottom: 10px;
+}
+.Act-list a:last-child{
+    border: 0
+}
+.Act-list img{
+    width: 158px;
+    height: 140px;
+    margin-top: 15px;
+}
+.Act-list .txt{
+    width: 140px;
+    height: 70px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.Act-list .txt p:nth-child(1){
+    color: #333333;
+    height: 32px;
+    margin-bottom: 10px;
+}
+.Act-list .txt p:nth-child(2){
+    color: #ff6f6f;
+    font-weight: bold;
+    height: 13px;
+    line-height: 13px
+}
+.Act-list .txt p:nth-child(3){
+    color: #bbbbbb;
+    margin-bottom: 0;
+}
+/* 相见恨晚 */
+.Meet{
+    width: 1301px;
+    height: 370px;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 189px;
+    padding-right: 50px;
+}
+.pic-left{
+    width: 305px;
+    height: 370px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.btn{
+    position: absolute;
+    left: 33px;
+    bottom: 33px;
+}
+.btn button{
+    width: 30px;
+    height: 6px;
+    background: #fff;
+    margin-right: 10px;
+}
+.pic-left img{
+    width: 305px;
+    height: 370px;
+}
+.left-img{
+    width: 610px;
+}
+.left-img li{
+    float: left;
+}
+.pic-right li{
+    width: 285px;
+    height: 180px;
+    float: left;
+    margin-left: 10px;
+}
+.pic-right li:nth-child(1){
+    margin-bottom: 10px;
+}
+.pic-right li:nth-child(2){
+    margin-bottom: 10px;
+}
+.pic-right li:nth-child(3){
+    margin-bottom: 10px;
+}
+.pic-right li img{
+    width: 285px;
+    height: 180px;
+}
+/* 生鲜果蔬 */
+.Vegetables{
+    width: 1301px;
+    height: 510px;
+    margin: auto; 
+    margin-top: 20px;  
+    padding-left: 189px;
+    padding-right: 50px;
+}
+.title{
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    width: 1301px;
+    height: 50px;
+    line-height: 50px
+}
+.common-left{
+    width: 305px;
+    height: 460px;
+    position: relative;
+    overflow: hidden; 
+    float: left;  
+}
+.common-left img{
+    width: 305px;
+    height: 460px;
+}
+.common-left .left-img{
+    width: 915px;
+
+}
+.common-right{
+    width: 887px;
+    height: 459px;
+    float: left;
+    border: 1px solid #e4e4e4;
+    border-left: 0
+}
+.right-top {
+    width: 887px;
+    height: 298px;
+    border-bottom: 1px solid #e4e4e4
+}
+.right-top li{
+    float: left;
+    height: 298px;     
+}
+.right-top li:nth-child(1) img{
+    width: 441px;
+    height: 298px;
+}
+.right-top li:nth-child(1){
+    width: 441px;
+    height: 298px;
+    border-right: 1px solid #e4e4e4;
+     
+}
+.right-top li:nth-child(2) img{
+    width: 220px;
+    height: 298px;
+}
+.right-top li:nth-child(2){
+    width: 220px;
+    height: 298px;
+    border-right: 1px solid #e4e4e4;
+}
+.right-top li:nth-child(3) img{
+    width: 222px;
+    height: 298px;
+}
+.right-top li:nth-child(3){
+    width: 222px;
+    height: 298px;
+}
+.right-bottom{
+    width: 887px;
+    height: 159px;
+}
+.right-bottom li{
+    float: left;
+    width: 220px;
+    height: 160px;
+    border-right: 1px solid #e4e4e4
+}
+.right-bottom li:last-child{
+    border-right: 0
+}
+.right-bottom li img{
+    width: 220px;
+    height: 100px;
+    margin-top: 30px;
+}
+/* 食品饮料酒 */
+.Wine{
+    width: 1301px;
+    height: 510px;
+    margin: auto; 
+    margin-top: 20px;  
+    padding-left: 189px;
+    padding-right: 50px;
+}
+.Wine-right .right-top li{
+    float: left;
+    width: 220px;
+    height: 298px;
+}
+.Wine-right .right-top li img{
+    width: 220px;
+    height: 298px;
+}
+.Wine-right .right-top li:nth-child(3){
+    border-right: 1px solid #e4e4e4
+}
+/* 时尚大牌 */
+.Fashion{
+    width: 1301px;
+    height: 510px;
+    margin: auto; 
+    margin-top: 20px;  
+    padding-left: 189px;
+    padding-right: 50px; 
+}
+.Fashion-right .right-top li{
+    float: left;
+    width: 220px;
+    height: 298px;
+}
+.Fashion-right .right-top li img{
+    width: 220px;
+    height: 298px;
+}
+.Fashion-right .right-top li:nth-child(3){
+    border-right: 1px solid #e4e4e4
+}
+.Fashion-right .right-bottom{
+    width: 887px;
+    height: 159px;
+}
+.Fashion-right .right-bottom .li1{
+    width: 887px;
+    height: 97px;
+}
+.bottom1 li{
+    float: left;
+    width: 220px;
+    height: 97px;
+}
+.Fashion-right .right-bottom .li1 img{
+    width: 220px;
+    height: 97px;
+    margin: 0
+}
+.Fashion-right .right-bottom .li2{
+    width: 887px;
+    height: 60px;
+}
+.bottom2 li{
+    float: left;
+    width: 150px;
+    height: 60px;
+    border: 0
+}
+.bottom2 li:nth-child(1){
+    margin-left: 40px;
+}
+.bottom2 li img{
+    width: 95px;
+    height: 40px;
+    margin-top: 10px;
+}
+/* 精品百货 */
+.Boutique{
+    width: 1301px;
+    height: 510px;
+    margin: auto; 
+    margin-top: 20px;  
+    padding-left: 189px;
+    padding-right: 50px; 
+}
+.Boutique-right .right-bottom{
+    width: 887px;
+    height: 159px;
+}
+.Boutique-right .right-bottom .li1{
+    width: 887px;
+    height: 97px;
+}
+.bottom1 li{
+    float: left;
+    width: 220px;
+    height: 97px;
+}
+.Boutique-right .right-bottom .li1 img{
+    width: 220px;
+    height: 97px;
+    margin: 0
+}
+.Boutique-right .right-bottom .li2{
+    width: 887px;
+    height: 60px;
+}
+.bottom2 li{
+    float: left;
+    width: 150px;
+    height: 60px;
+    border: 0
+}
+.bottom2 li:nth-child(1){
+    margin-left: 40px;
+}
+.bottom2 li img{
+    width: 95px;
+    height: 40px;
+    margin-top: 10px;
+}
+/* 个护清洁 */
+.Clean{
+    width: 1301px;
+    height: 510px;
+    background: rgb(192, 255, 234);
+    margin: auto; 
+    margin-top: 20px;  
+    padding-left: 189px;
+    padding-right: 50px; 
+}
+/* 母婴玩具 */
+.Baby{
+    width: 1301px;
+    height: 510px;
+    background: powderblue;
+    margin: auto; 
+    margin-top: 20px;  
+    padding-left: 189px;
+    padding-right: 50px; 
+}
+/* 家居家纺 */
+.Sunvim{
+    width: 1301px;
+    height: 510px;
+    background: rgb(255, 243, 192);
+    margin: auto; 
+    margin-top: 20px;  
+    padding-left: 189px;
+    padding-right: 50px; 
+}
+/* 3C数码 */
+.Digital{
+    width: 1301px;
+    height: 510px;
+    background: rgb(235, 192, 255);
+    margin: auto; 
+    margin-top: 20px;  
+    padding-left: 189px;
+    padding-right: 50px; 
+}
+/* 猜你喜欢 */
+.like{
+    width: 1301px;
+    height: 90px;
+    background:gold;
+    margin: auto; 
+    padding-left: 189px;
+    padding-right: 50px; 
+}
+/* 瀑布流 */
+
+div.wrap{
+    width: 1301px;
+    background:red;
+    margin: auto; 
+    padding-left: 189px;
+    padding-right: 50px;
+    overflow: hidden; 
+    /* position: relative; */
+}
+div.wrap div {
+    width: 208px;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    float: left;
+    /* position: absolute; */
+}
+div.wrap div img {
+    width: 200px;
+}
+div.wrap div:nth-child(5n-3){
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div.wrap div:nth-child(5n-1){
+    margin-left: 10px;
+    margin-right: 10px;
 }

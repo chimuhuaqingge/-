@@ -9,9 +9,9 @@ function Banner(){}
             //元素
             this.btn_left = document.querySelector("#left");
             this.btn_right = document.querySelector("#right");
-            this.btn_list = document.querySelectorAll("#btnlist span");
-            this.banner_list = document.querySelectorAll("#banner-list li");
-            this.ul =  document.querySelector("#banner-list ul");
+            this.btn_list = document.querySelectorAll("#list span");
+            this.banner_list = document.querySelectorAll(".banner-list li");
+            this.ul =  document.querySelector(".banner-list ul");
             this.itmeNum = this.banner_list.length;
             this.bindEvent();
         },
@@ -79,13 +79,15 @@ function Banner(){}
             }else{
                 this.btn_list[this.nowIndex].className ="active"
             }
+
+            console.log( this.btn_list);
         },
-        // autoPlay(){
-        //     this.autoTimer = setInterval(function(){
-        //         this.next()
-        //     }.bind(this),1000)
-        // }
+        autoPlay(){
+            this.autoTimer = setInterval(function(){
+                this.next()
+            }.bind(this),1000)
+        }
     })
 var banner = new Banner();
 banner.init();
-//banner.autoPlay();
+banner.autoPlay();
