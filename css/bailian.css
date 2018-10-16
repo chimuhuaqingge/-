@@ -344,31 +344,39 @@ header{
     width: 190px;
     height: 467px;
     background: #4e494a;
-<<<<<<< HEAD
     z-index: 100;
 }
 .shop-type li{
-    padding-left: 42px;
+    /* padding-left: 42px; */
     height: 30px;
-    line-height: 30px;
-    
+    line-height: 30px;   
+}
+.shop-type li img{
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -3px;
 }
 .shop-type a{
     font-size: 12px;
     color: #fff
 }
+
 .shop-type .type-li1{
     height: 35px;
-    padding-left: 13px;
+    line-height: 35px;
+    /* padding-left: 13px; */
     background:#151515;
     margin-bottom: 5px;
     color: #fff;
 }
-.type-li1 img{
+.shop-type .type-li1 img{
     width: 14px;
     height: 12px;
-    margin-top: 0;
-    margin-right: 20px;
+    margin-right: 25px;
+    margin-left: 13px;
     /* vertical-align: middle */
 }
 .shop-type li a:hover{
@@ -418,91 +426,13 @@ header{
     height:23px;
     border-bottom: 1px dashed #f3f3f3
 }
-=======
-    z-index: 1;
-}
-.shop-type li{
-    padding-left: 42px;
-    height: 35px;
-    line-height: 35px;
-    position: relative;
-}
-.shop-type li a{
-    font-size: 12px;
-    color: #fff
-}
-.shop-type .type-li1{
-    padding-left: 13px;
-    background:#151515;
-}
-.type-li1 img{
-    width: 14px;
-    height: 12px;
-    margin-top: 0;
-    margin-right: 20px;
-    /* vertical-align: middle */
-}
-.shop-aside{
-    /* width: 710px; */
-    width: 692px;
-    /* height: 432px; */
-    height: 412px;
-    background:#fff;
-    position: absolute;
-    left: 190px;
-    top: 0;
-    padding: 20px 0 0 25px;
-    display: none;
-}
-.shop-aside ul{
-    margin-bottom: 20px;
-}
-.shop-aside ul:nth-child(1){
-    width: 685px;
-    height:40px;
-}
-.shop-aside ul:nth-child(2){
-    width: 685px;
-    height:23px;
-}
-.shop-aside ul:nth-child(3){
-    width: 685px;
-    height:23px;
-}
-.shop-aside ul:nth-child(4){
-    width: 685px;
-    height:23px;
-}
-.shop-aside ul:nth-child(5){
-    width: 685px;
-    height:23px;
-}
-.shop-aside ul:nth-child(6){
-    width: 685px;
-    height:40px;
-}
-.shop-aside ul:nth-child(7){
-    width: 685px;
-    height:23px;
-}
-.shop-aside ul:nth-child(8){
-    width: 685px;
-    height:23px;
-}
-.shop-aside ul:nth-child(9){
-    width: 685px;
-    height:23px;
-}
->>>>>>> be680f0d96c08310a9078a2b0a6d894c0faeb549
 .shop-aside ul li{
     float: left;
     height: 23px;
     line-height: 13px;
     margin: 0;
     padding: 0;
-    margin-right: 18px;
-    
-    
+    margin-right: 18px;   
 }
 .shop-aside ul li a{
     color: #666666;
@@ -552,7 +482,6 @@ header{
 .banner-list{
     width: 1550px;
     height: 430px;
-    background: #22ffee;
     margin: auto;
     position: relative; 
 }
@@ -614,6 +543,189 @@ header{
     border: 0;
     background: #333;
 }
+.logon{
+    position: absolute;
+    top: 5px;
+    right: 170px;
+    width: 220px;
+    height: 420px;
+}
+.head{
+    width: 220px;
+    height: 110px;
+    border-bottom: 1px solid #eeeeee
+}
+.head img{
+    width: 42px;
+    height: 42px;
+    margin-left: 16px;
+    margin-top: 16px;
+    float: left;
+    margin-right: 15px;
+    
+}
+.msg{
+    width: 100px;
+    height: 30px;
+    float: left;
+    margin-top: 20px;
+    
+}
+.msg span:hover a{
+    color: #ff6f6f
+}
+.gift{
+    width: 185px;
+    height: 25px;
+    line-height: 25px;
+    background: #fff3f5;
+    margin-left: 14px;
+    text-align: center;
+    margin-top: 12px;
+}
+.gift a{
+    color: #ff6f6f
+}
+.gift:hover{
+    background: #ff6f6f
+}
+.gift:hover a{
+    color: #fff
+}
+.logon-middle{
+    width:175px;
+    height: 105px;
+    border-bottom: 1px solid #eeeeee ;
+    padding:5px 30px 15px 15px;
+}
+.news span:nth-child(1){
+    float: left;
+    width: 70px;
+    height:25px ;
+    line-height: 25px;
+    font-weight: bold;
+    color: #444444;
+    text-align: center;
+    border-bottom: 2px solid #ff6f6f
+}
+.news span:nth-child(2){
+    float: right;
+    height: 25px;
+    line-height: 25px;;
+}
+.content{
+    margin-top: 10px;
+}
+.content li{
+    height: 20px;
+    line-height: 20px;
+}
+.content li a span{
+    color: #666666;
+    font-weight: bold
+}
+.logon-bottom{
+    width: 220px;
+    height: 182px;
+}
+.logon-bottom li{
+    float: left;
+    width: 72px;
+    height: 25px;
+    background: #fff;
+    text-align: center;
+    padding-top: 35px;
+}
+.logon-bottom li:hover a{
+    color: #ff6f6f
+}
+.logon-bottom li:nth-child(3n-1){
+    border-left: 1px solid #eeeeee ;
+    border-right: 1px solid #eeeeee ;
+}
+.logon-bottom li:nth-child(1){
+    background: url(../images/life_i1_03.gif) no-repeat 28px 10px;
+    background-size: 16px 21px;
+}
+.logon-bottom li:nth-child(1):hover{
+    background: url(../images/life_i1_06.gif) no-repeat 28px 10px;
+    background-size: 16px 21px;
+}
+.logon-bottom li:nth-child(2){
+    background: url(../images/life_iz1_03.gif) no-repeat 26px 10px;
+    background-size: 21px 21px;
+}
+.logon-bottom li:nth-child(2):hover{
+    background: url(../images/life_iz1_06.gif) no-repeat 26px 10px;
+    background-size: 21px 21px;
+}
+.logon-bottom li:nth-child(3){
+    background: url(../images/life_i4_03.gif) no-repeat 26px 10px;
+    background-size: 21px 21px;
+}
+.logon-bottom li:nth-child(3):hover{
+    background: url(../images/life_i4_06.gif) no-repeat 26px 10px;
+    background-size: 21px 21px;
+}
+.logon-bottom li:nth-child(4){
+    border-top: 1px solid #eeeeee ;
+    border-bottom: 1px solid #eeeeee ;
+    background: url(../images/life_iz2_03.gif) no-repeat 26px 10px;
+    background-size: 17px 21px;
+}
+.logon-bottom li:nth-child(4):hover{
+    background: url(../images/life_iz2_06.gif) no-repeat 26px 10px;
+    background-size: 17px 21px;
+
+}
+.logon-bottom li:nth-child(5){
+    border-top: 1px solid #eeeeee ;
+    border-bottom: 1px solid #eeeeee ;
+    background: url(../images/life_iz3_03.gif) no-repeat 26px 10px;
+    background-size: 17px 21px;
+}
+.logon-bottom li:nth-child(5):hover{
+    background: url(../images/life_iz3_06.gif) no-repeat 26px 10px;
+    background-size: 17px 21px;
+
+}
+.logon-bottom li:nth-child(6){
+    border-top: 1px solid #eeeeee ;
+    border-bottom: 1px solid #eeeeee ;
+    background: url(../images/life_iz4_03.gif) no-repeat 26px 10px;
+    background-size: 17px 21px;
+}
+.logon-bottom li:nth-child(6):hover{
+    background: url(../images/life_iz4_06.gif) no-repeat 26px 10px;
+    background-size: 17px 21px;
+
+}
+.logon-bottom li:nth-child(7){
+    background: url(../images/life_i3_03.gif) no-repeat 28px 10px;
+    background-size: 24px 21px;
+}
+.logon-bottom li:nth-child(7):hover{
+    background: url(../images/life_i3_06.gif) no-repeat 28px 10px;
+    background-size: 24px 21px;
+}
+.logon-bottom li:nth-child(8){
+    background: url(../images/life_i6_03.gif) no-repeat 28px 10px;
+    background-size: 19px 25px;
+}
+.logon-bottom li:nth-child(8):hover{
+    background: url(../images/life_i6_06.gif) no-repeat 28px 10px;
+    background-size: 19px 25px;
+}
+.logon-bottom li:nth-child(9){
+    background: url(../images/life_i9_03.gif) no-repeat 28px 10px;
+    background-size: 22px 17px;
+    
+}
+.logon-bottom li:nth-child(9):hover{
+    background: url(../images/life_i9_06.gif) no-repeat 28px 10px;
+    background-size: 22px 17px;
+}
+/* 轮播图按钮 */
 #show{
     width: 785px;
     height: 430px;
@@ -661,8 +773,7 @@ header{
     height: 243px;
     border: 1px solid #e4e4e4;
     position: relative;
-    overflow: hidden;
-    
+    overflow: hidden;   
 }
 .Act-right .left{
     display: block;
