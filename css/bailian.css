@@ -23,11 +23,12 @@ header{
     background: url(../images/jiantou.gif) no-repeat 65px 7px;
 }
 .Hovering:hover{
-     border-left: 1px solid #e5e5e5
+     background: #fff;
+     border: 0;
 }
 .Hovering:hover .first{
     background:url(../images/jiantou2.gif) no-repeat 65px;
-    box-shadow: 1px 0 0 #e5e5e5
+    
 }
 /* top--左 */
 .top-left{
@@ -110,14 +111,14 @@ header{
     padding-left: 10px;
 }
 .right-li3:hover{
-    border-left: 1px solid #e5e5e5
+    
 }
 .right-li3:hover a{   
     border: 0;   
     width: 48px;
     height: 30px;
     padding: 0 10px;
-    box-shadow: 1px 0 0 #e5e5e5
+    border: 0;
 }
 .right-li4 .li4-aside{
     width: 72px;
