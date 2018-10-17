@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>欢迎注册百联</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bailian.css">
+    <style>
+        body{
+            background: #f9f9f8
+        }
+        header{
+            width: 1245px;
+            height: 90px;
+            margin: auto;
+            padding-top: 30px;
+            padding-left: 305px;
+            border: 0;
+        }
+        .logo{
+            width: 130px;
+            height: 53px;
+            float: left;
+        }
+        h2{
+            float: left;
+            width: 120px;
+            height: 45px;
+            line-height: 45px;
+            text-align: right;
+            border-left: 1px solid #dddddd;
+            margin-left: 10px;
+            margin-top: 4px;
+        }
+        .load{
+            width: 1245px;
+            height: 635px;
+            margin: auto;
+            padding-left: 305px
+        }
+        .load-list{
+            width: 950px;
+            height: 634px;
+            border: 1px solid #e1dfda;
+            background: #ffffff
+        }
+        .load-title{
+            width: 930px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 15px;
+            color: #ff002a;
+            border-bottom: 1px solid #e1dfda;
+            padding-left: 20px;
+        }
+        .foot{
+            height: 155px;;
+        }
+        .Menu-vue{           
+            width: 550px;
+            height: 460px;
+            background: yellow;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .name{
+            width: 400px;
+            height: 36px;
+            line-height: 36px;
+            margin-right: 0px;
+        }
+        .password{
+            margin:20px 0
+        }
+        .sure-password{
+            margin-bottom: 20px;
+        }
+        .mobile{
+            margin-bottom: 20px;
+        }
+        .verifyCode{
+            margin-bottom: 20px;
+        }
+        .smsCode{
+            margin-bottom: 20px;
+        }
+        input{
+            width: 298px;
+            height: 34px;
+            border: 1px solid #cccccc;
+            padding-left: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logon-logo.png" alt="">
+        <h2>用户注册</h2>
+    </header>
+    <div class="load">
+        <div class="load-list">
+            <div class="load-title">您好，感谢您加入i百联</div>
+            <div class="Menu-vue">
+                <div class="name">
+                    <i>* </i>  
+                    用户名 ：
+                <input name="loginId" id="loginId"  maxlength="20" type="text" placeholder="6-20位字符，支持字母或字母与数字组合"> 
+                </div> 
+                <div class="password">
+                    <i>* </i>  
+                    登录密码 ：
+                    <input name="password" id="password" maxlength="20" placeholder="8-20位字符，至少使用两种字符组合">
+                </div> 
+                <div class="sure-password">
+                    <i>* </i>  
+                    确认密码 ：
+                    <input name="password" id="sure-password" maxlength="20" placeholder="请再次输入密码">
+                </div>
+                <div class="mobile">
+                    <i>* </i>  
+                    手机号 ：
+                    <input name="mobile" id="mobile"  type="text" maxlength="11" placeholder="请输入11位手机号码">
+                </div>     
+                <div class="verifyCode">验证码：
+                    <input id="verifyCode" name="verifyCode"  maxlength="4" type="text" placeholder="请输入验证码">
+                </div>
+                <div class="smsCode">
+                    <i>* </i>  
+                    短信验证码 ：
+                    <input id="smsCode" name="smsCode" maxlength="6" type="text" placeholder="请输入短信验证码">
+                </div> 
+                <div class="name">电子邮箱：
+                    <input id="verifyCode" type="text" placeholder="请输入有效邮箱">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">        
+        <ul class="bottom-2">
+            <li>百联集团有限公司版权所有</li>
+            <li>客服电话：400-900-8800</li>
+            <li>沪ICP备15028847号</li>
+        </ul>
+        <p class="bottom-3">互联网药品信息服务资质证书编号：沪-（非营业性）-2016-0044</p>
+        <p class="bottom-4">全渠道增值电信业务经营许可证</p>
+        <ul class="bottom-5">
+            <li><img src="images/6.gif" alt=""><a href="#">沪公网安备 31010102002366号</a></li>
+            <li><img src="images/7.gif" alt=""><a href="#">网购大家评</a></li>
+            <li><img src="images/8.gif" alt=""><a href="#">上海工商</a></li>
+            <li><img src="images/9.gif" alt=""><a href="#">经营执照</a></li>
+        </ul>
+    </div>
+</body>
+</html>

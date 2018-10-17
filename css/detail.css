@@ -1,0 +1,46 @@
+#preview {
+    
+   
+}
+#preview>#mediumDiv
+{
+    width: 448px;
+    height: 448px;  
+    position: relative;
+}
+#preview>#mediumDiv img
+{
+    vertical-align:middle;
+    width:448px;
+    height:448px;
+}
+#preview>#mediumDiv>#mask{
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    background: #ffa;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    display:none;
+}
+#preview>#mediumDiv>#superMask{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    cursor: move;
+}
+#preview>#largeDiv{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: #fff;
+    border: 1px solid #ddd;
+    top: 0;
+    left: 355px;
+    z-index: 999;
+    display: none;
+}
