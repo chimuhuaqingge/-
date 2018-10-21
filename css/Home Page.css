@@ -88,13 +88,11 @@ header{
     height: 725px;
     margin: auto;
     padding: 0 189px 0 189px;
-    background: orchid
 }
 .goods .goods-title{
     width: 1172px;
     height: 75px;
     line-height: 75px;
-    background: yellow;
     border-bottom: 1px solid #eeeeee;
     position: relative;
 }
@@ -190,7 +188,6 @@ header{
 .goods-bootom{
     width: 108px;
     height: 72px;
-    background: yellowgreen;
     position: absolute;
     bottom: -23px;
     padding-top: 10px;
@@ -200,7 +197,6 @@ header{
     width: 24px;
     height: 13px;
     line-height: 13px;
-    background: yellow;
     float: left; 
     background: url(../images/share1.gif) no-repeat 22px 0; 
     background-size: 12px 12px;
@@ -209,7 +205,6 @@ header{
 .jiantou{
     width: 19px;
     height: 13px;
-    background: rebeccapurple;
     float: left;
     background: url(../images/share.gif) no-repeat 10px 4px;
 }
@@ -282,7 +277,6 @@ header{
 .recommend{
     width: 680px;
     height: 618px;
-    background:#556ff3;
     float: left;
     margin-left: 30px;
 }
@@ -401,10 +395,121 @@ header{
     margin-left: 10px;
     color: #999999
 }
+.Buy{
+    padding-left: 10px;
+}
+.Buy div{
+    margin-bottom: 20px;
+}
 .Buy div:nth-child(1){
     width: 680px;
     height: 35px;
     line-height: 35px;
+   
+}
+.Buy-list1 span:nth-child(1){
+    margin-right: 40px;
+}
+.Buy-list1 span:nth-child(2){
+    margin-right: 5px;
+    color: #e6133c
+}
+.Buy-list2{
+    height: 25px;
+    line-height: 25px;
+}
+.Buy-list2 .posidtion{
+    width: 100px;
+    line-height: 25px;
+    margin-left: 40px;
+    margin-right: 10px
+}
+.Buy-list3 span:nth-child(1){
+    margin-right: 40px;
+}
+.Buy-list3 .rule{
+    margin-left: 38px;
+}
+.Buy-list3 .rule li{
+    float: left;
+    margin-left: 45px;
+    list-style-type: disc
+}
+.Buy div:nth-child(3){
+    width: 680px;
+    height: 35px;
+    line-height: 35px;
+   
+}
+.Buy-list4 {
+    width: 680px;
+    height: 26px;
+    line-height: 16px;
+    margin-top: 30px;
+    position: relative;
+} 
+.Buy-list4 .buy-num{
+    width: 55px;
+    height: 26px;
+    
+    position: absolute;
+    left: 0;
+    top: 5px;
+    
+}
+.Buy-shop{
+    position: absolute;
+    left: 68px;
+    top: 0px;
+}
+.Buy-shop span{
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 14px;
+    width: 26px;
+    float: left;
+    border: 1px solid #eaeaea;
+}
+.Buy-shop span:nth-child(1){
+    background: #eeeeee;
+}
+.Buy-shop span:nth-child(3){
+    background: #ffffff;
+}
+.Buy-shop span:nth-child(2){
+    width: 50px;
+}
+.deal{
+    width: 409px;
+    height: 50px;
+    margin-left: 80px;
+}
+.deal p:nth-child(1){
+    width: 166px;
+    height: 48px ;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid  #e6133c;
+    background: #fff8f9;
+    color: #e6133c;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+    margin-right: 20px
+}
+.deal p:nth-child(2){
+    width: 166px;
+    height: 48px ;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid  #e6133c;
+    background: #ec595c;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
 }
 /*购买此商品的人也会购买*/
 .More{
@@ -412,13 +517,11 @@ header{
     height: 340px;
     margin: auto;
     padding: 0 189px 0 189px;
-    background: pink
 }
 .More .title{
     font-size: 18px;
     height: 18px;
     line-height: 18px;
-    background: yellow
 }
 .container{
     width: 1172px;
@@ -442,16 +545,82 @@ header{
     
 }
 .more-list li{
-    width: 1172px;
+    width: 220px;
     height: 305px; 
     float: left;
-    background: red;
+    margin-right: 15px;
+    border: 1px solid #eaeaea;
+    background: #fff
     /* position: absolute;
      */
 }
-.container ul li.active{
+.more-list li img{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 10px
+}
+.more-rec{
+    padding: 0 10px;
    
 }
-.more-list li:nth-child(2){
-    background: blue
+.more-price{
+    padding: 0 10px;
+    margin-top: 10px;
+    color: #e6133c;
+    font-weight: bold
+}
+.Introduction{
+    width: 1361px;
+    height: 4000px;
+    margin: auto;
+    padding-left: 189px; 
+    margin-top: 40px;
+}
+/* 左侧 */
+.more-left{
+    width: 220px;
+    float: left;
+    border: 1px solid #eaeaea;
+}
+.more-left h2{
+    text-align: center;
+    height: 39px;
+    line-height: 39px;
+    color: #333;
+    border-bottom: 1px solid #eaeaea;
+}
+.more-left li{
+    background: #fff
+}
+/* .more-right{
+    float: left;
+    width: 955px;
+    border: 1px solid #eaeaea;
+    
+    background: purple
+} */
+.Right{
+    width: 935px;
+    height: 800px;
+    float: left;
+    margin-left: 15px;
+    border: 1px solid #eaeaea;
+}
+#Button p{
+    width: 158px;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    border-right:1px solid #eaeaea;
+    float: left;
+    border-bottom: 1px solid #eaeaea;
+    border-right:  1px solid #eaeaea;
+    
+}
+.img{
+    padding-left: 102px;
+    padding-top: 10px;
+}
+.foot{
+    clear: both
 }

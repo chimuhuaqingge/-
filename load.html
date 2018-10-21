@@ -59,32 +59,50 @@
             height: 155px;;
         }
         .Menu-vue{           
-            width: 550px;
+            width: 720px;
             height: 460px;
-            background: yellow;
-            margin: auto;
             margin-top: 30px;
+            float: right;
+            
         }
         .name{
             width: 400px;
             height: 36px;
             line-height: 36px;
-            margin-right: 0px;
+            margin-left: 25px;
+            position: relative;
         }
         .password{
-            margin:20px 0
+            margin:20px 0;
+            margin-left: 13px;
+            position: relative;
         }
         .sure-password{
             margin-bottom: 20px;
+            margin-left: 13px;
         }
         .mobile{
             margin-bottom: 20px;
+            margin-left: 25px;
+            position: relative;
         }
         .verifyCode{
             margin-bottom: 20px;
+            margin-left: 38px;
+        }
+        .verifyCode input{
+            width: 190px;
         }
         .smsCode{
             margin-bottom: 20px;
+            position: relative;
+        }
+        .smsCode input{
+            width: 190px;
+        }
+        .email{
+            margin-left: 25px;
+            position: relative;
         }
         input{
             width: 298px;
@@ -92,7 +110,61 @@
             border: 1px solid #cccccc;
             padding-left: 30px;
         }
-        
+        .hint{
+            width: 200px;
+            height: 36px;
+            position: absolute;
+            top: 10px;
+            left: 400px;
+            text-align: left;
+            display: none
+        }
+        .hint img{
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            
+        }
+        .hint2{
+            margin-left: 13px;
+        }
+        .hint3{
+            margin-left: 0px;
+        }
+        .getcode{
+            width: 88px;
+            height: 34px;
+            line-height: 34px;
+            border: 1px solid #dddddd;
+            position: absolute;
+            left: 320px;
+            top: 0;
+            text-align: center
+            
+        }
+        .choice{
+            margin-left: 85px;
+            margin-top: 10px
+        }
+        .choice input{
+            width: 13px;
+            height: 13px;
+        }
+        .choice a{
+            color: #0088ca;
+        }
+        .Submit{
+            width: 300px;
+            height: 35px;
+            line-height: 35px;
+            margin-top: 10px;
+            background: #e6133c;
+            text-align: center;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+            margin-left: 85px;
+        }
     </style>
 </head>
 <body>
@@ -107,22 +179,31 @@
                 <div class="name">
                     <i>* </i>  
                     用户名 ：
-                <input name="loginId" id="loginId"  maxlength="20" type="text" placeholder="6-20位字符，支持字母或字母与数字组合"> 
+                    <input name="loginId" id="loginId"  maxlength="20" type="text" placeholder="6-20位字符，支持字母或字母与数字组合"> 
+                    <div id="hint-1" class="hint"><img src="images/icon-1.gif" alt="">请输入用户名</div>
+                    <div id="hint-2" class="hint"><img src="images/icon-2_03.gif" alt="">用户名输入格式错误</div>
+                    <div id="hint-3" class="hint"><img src="images/icon-3_03.gif" alt=""></div>
                 </div> 
                 <div class="password">
                     <i>* </i>  
                     登录密码 ：
                     <input name="password" id="password" maxlength="20" placeholder="8-20位字符，至少使用两种字符组合">
+                    <div id="hint-4" class="hint hint2"><img src="images/icon-1.gif" alt="">请输入登录密码</div>
+                    <div id="hint-5" class="hint hint2"><img src="images/icon-2_03.gif" alt="">密码输入格式错误</div>
+                    <div id="hint-6" class="hint hint2"><img src="images/icon-3_03.gif" alt=""></div>
                 </div> 
                 <div class="sure-password">
                     <i>* </i>  
                     确认密码 ：
-                    <input name="password" id="sure-password" maxlength="20" placeholder="请再次输入密码">
+                    <input name="password" id="surePassword" maxlength="20" placeholder="请再次输入密码">
                 </div>
                 <div class="mobile">
                     <i>* </i>  
                     手机号 ：
                     <input name="mobile" id="mobile"  type="text" maxlength="11" placeholder="请输入11位手机号码">
+                    <div id="hint-7" class="hint"><img src="images/icon-1.gif" alt="">请输入手机号码</div>
+                    <div id="hint-8" class="hint"><img src="images/icon-2_03.gif" alt="">手机号码输入错误</div>
+                    <div id="hint-9" class="hint"><img src="images/icon-3_03.gif" alt=""></div>
                 </div>     
                 <div class="verifyCode">验证码：
                     <input id="verifyCode" name="verifyCode"  maxlength="4" type="text" placeholder="请输入验证码">
@@ -130,11 +211,19 @@
                 <div class="smsCode">
                     <i>* </i>  
                     短信验证码 ：
-                    <input id="smsCode" name="smsCode" maxlength="6" type="text" placeholder="请输入短信验证码">
+                    <input id="smsCode" name="smsCode"  type="text" placeholder="请输入短信验证码">
+                    <div class="getcode">获取验证码</div>
                 </div> 
-                <div class="name">电子邮箱：
-                    <input id="verifyCode" type="text" placeholder="请输入有效邮箱">
+                <div class="email">电子邮箱：
+                    <input id="email" type="text" placeholder="请输入有效邮箱">
+                    <div id="hint-10" class="hint hint2 hint3"><img src="images/icon-1.gif" alt="">请输入登录邮箱</div>
+                    <div id="hint-11" class="hint hint2 hint3"><img src="images/icon-2_03.gif" alt="">邮箱格式输入格式错误</div>
+                    <div id="hint-12" class="hint hint2 hint3"><img src="images/icon-3_03.gif" alt=""></div>
                 </div>
+                <div class="choice">
+                    <input type="checkbox" checked="checked" >我已阅读并同意<a href="#">《百联通会员注册协议》</a>
+                </div>
+                <div class="Submit" id="Submit">立即注册  完成绑定</div>
             </div>
         </div>
     </div>
@@ -155,3 +244,96 @@
     </div>
 </body>
 </html>
+<script src="js/jquery.js"></script>
+<script src="js/ajax.js"></script>
+<script src="php/load.php"></script>
+<script>
+    // 用户名验证
+    $("#loginId").blur(function(){
+        var oLoginId = $(this).val();
+        var Loginreg = /^[0-9a-zA-Z]{6,20}$/;
+        $("#loginId").empty();
+        if(oLoginId == null || oLoginId == ''){
+            $("#hint-1").css("display","block");
+            
+        }else if( Loginreg.test(oLoginId)){
+            $("#hint-1").css("display","none");
+            $("#hint-2").css("display","none");
+            $("#hint-3").css("display","block");
+        }else{
+            $("#hint-1").css("display","none");
+            $("#hint-3").css("display","none");
+            $("#hint-2").css("display","block");
+        }
+    });
+
+    // 密码验证
+    $("#password").blur(function(){
+        var oPassword = $(this).val();
+        var Pwdreg = /^[\da-zA-Z]{8,20}$/;
+        $("#password").empty();
+        if(oPassword == null || oPassword == ''){
+            // alert(0);
+            $("#hint-4").css("display","block");
+           
+        }else if(Pwdreg.test(oPassword)){
+            //alert("正确");
+            $("#hint-4").css("display","none");
+            $("#hint-5").css("display","none");
+            $("#hint-6").css("display","block");
+        }else{
+            //alert("错误");
+            $("#hint-4").css("display","none");
+            $("#hint-6").css("display","none");
+            $("#hint-5").css("display","block");
+        }
+    });
+    // 手机号验证
+    $("#mobile").blur(function(){
+        var oMobile = $(this).val();
+        var Mobreg = /^0?(13[0-9]|14[5-9]|15[012356789]|166|17[0-8]|18[0-9]|19[89])[0-9]{8}$/;
+        $("#mobile").empty();
+        if(oMobile == null || oMobile == ''){
+            // alert(0);
+            $("#hint-7").css("display","block");
+           
+        }else if(Mobreg.test(oMobile)){
+            //alert("正确");
+            $("#hint-7").css("display","none");
+            $("#hint-8").css("display","none");
+            $("#hint-9").css("display","block");
+        }else{
+            //alert("错误");
+            $("#hint-7").css("display","none");
+            $("#hint-9").css("display","none");
+            $("#hint-8").css("display","block");
+        }
+    });
+
+    // 邮箱验证
+    $("#email").blur(function(){
+        var oEmail = $(this).val();
+        var Emailreg = /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+        $("#email").empty();
+        if(oEmail  == null ||oEmail  == ''){
+            // alert(0);
+            $("#hint-10").css("display","block");
+           
+        }else if(Emailreg.test(oEmail )){
+            //alert("正确");
+            $("#hint-10").css("display","none");
+            $("#hint-11").css("display","none");
+            $("#hint-12").css("display","block");
+        }else{
+            //alert("错误");
+            $("#hint-10").css("display","none");
+            $("#hint-12").css("display","none");
+            $("#hint-11").css("display","block");
+        }
+    });
+
+
+        
+
+        
+</script>

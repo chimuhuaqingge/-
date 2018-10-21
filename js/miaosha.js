@@ -1,6 +1,6 @@
 
 var timer = setInterval(function(){
-    var end = new Date("2018/10/19 00:00:00");      
+    var end = new Date("2018/11/1 00:00:00");      
     var endTime = end.getTime();
     //console.log(endTime)
     var now = new Date();

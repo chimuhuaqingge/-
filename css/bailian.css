@@ -811,7 +811,14 @@ header{
 }
 .Act-shop li{
     float: left;
+    position: absolute;
+    opacity: 0;
 }
+
+.Act-shop li.active{
+    opacity: 1;
+}
+
 .Act-list a{
     display:block;
     float: left;
